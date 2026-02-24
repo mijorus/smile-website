@@ -2,14 +2,6 @@
   pages:
     - title: Overview
 
-- title: Update Management
+- title: Desktop integration
   pages:
-    - title: Static Updates
-    - title: Github Updates
-    - title: Gitlab Updates
-    - title: FTP Updates
-    - title: Codeberg Updates
-
-- title: Cli
-  pages:
-    - title: Update Source
+    - title: Paste automatically on Wayland

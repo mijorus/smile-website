@@ -10,7 +10,7 @@ languages:
     languageName: English
     languageCode: en-US
     contentDir: content/en
-    title: Gear Lever
+    title: Smile
     params:
       description: Documentation website
 
@@ -25,7 +25,7 @@ params:
 
   author:
     name: Lorenzo Paderi
-    url: https://gearlever.mijorus.it
+    url: https://smile.mijorus.it
 
   themeColors:
     light: '#ffffff'
@@ -33,7 +33,7 @@ params:
 
   years:
     start: ''
-    present: 2025
+    present: 2026
 
   social:
     github: ''
@@ -51,7 +51,7 @@ params:
   algolia:
 
   home:
-    repository: 'mijorus/gearlever'
+    repository: 'mijorus/smile'
 
 #    repositories:
 #      - name: Website

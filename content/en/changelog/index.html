@@ -1,0 +1,41 @@
+---
+title: "Changelog"
+type: "page"
+layout: "single"
+aliases:
+- "/changelog"
+---
+
+<body>
+    <div class="container">
+        <div class="changelog">
+            <ul class="changelog-releases"></ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    async function main() {
+        const response = await fetch('https://raw.githubusercontent.com/mijorus/gearlever/master/data/it.mijorus.gearlever.metainfo.xml.in');
+
+        const xml = await response.text();
+
+        const parser = new DOMParser();
+        changelogXml = parser.parseFromString(xml, 'text/xml');
+
+        const changelogReleases = document.querySelector('.changelog-releases');
+        for (release of changelogXml.getElementsByTagName('release')) {
+            console.log(release);
+            const li = document.createElement('li');
+            const lidiv = document.createElement('div');
+
+            lidiv.innerHTML += `<strong>${release.getAttribute('version')}</strong>`;
+            lidiv.append(...release.getElementsByTagName('description')[0].childNodes);
+            li.append(lidiv);
+
+            changelogReleases.append(li);
+        }
+    }
+
+    main();
+</script>

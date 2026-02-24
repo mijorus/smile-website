@@ -1,0 +1,88 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --font-family-brand: 'Inter', serif;
+  --font-family-code: 'Menlo', monospace;
+
+  --background: #ffffff;
+  --color: #355265;
+  --color2: #274457;
+  --color3: #476d86;
+
+  --color-anchor: #328ac1;
+  --color-hover: #4b9dd0;
+
+  --cover-opacity: 0.05;
+
+  --background-fg: #f7f7f7;
+  --background-fg2: #ebebeb;
+  --border-color: #dddddd;
+
+  --box-shadow: 0 0 1px rgba(0, 0, 0, .7);
+  --box-shadow2: 0 0 3px rgba(0, 0, 0, .2);
+
+  --blur: 10px;
+
+  --home-cover-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,250,1) 25%, rgba(214,219,220,1) 50%, rgba(255,255,250,1) 75%, rgba(255,255,255,1) 100%);
+
+  --icon-filter: invert(41%) sepia(19%) saturate(840%) hue-rotate(161deg) brightness(92%) contrast(92%);
+
+  /* base16 tomorrow */
+  --chroma-base00: #f9f9f9;
+  --chroma-base01: #e0e0e0;
+  --chroma-base02: rgba(159, 218, 159, .2);
+  --chroma-base03: #8e908c;
+  --chroma-base04: #969896;
+  --chroma-base05: #4d4d4c;
+  --chroma-base06: #282a2e;
+  --chroma-base07: #1d1f21;
+  --chroma-base08: #c82829;
+  --chroma-base09: #f5871f;
+  --chroma-base0A: #eab700;
+  --chroma-base0B: #718c00;
+  --chroma-base0C: #3e999f;
+  --chroma-base0D: #4271ae;
+  --chroma-base0E: #8959a8;
+  --chroma-base0F: #a3685a;
+}
+
+:root[data-color="dark"] {
+  --background: #121212;
+  --color: #efefef;
+  --color2: #ffffff;
+  --color3: #b3b3b3;
+
+  --cover-opacity: 0.2;
+
+  --background-fg: #333333;
+  --background-fg2: #1f1f1f;
+  --border-color: rgba(255, 255, 255, .4);
+
+  --box-shadow: 0 0 1px rgba(255, 255, 255, 1);
+  --box-shadow2: 0 0 3px rgba(255, 255, 255, .6);
+
+  --home-cover-background: radial-gradient(circle, rgba(23,23,25,1) 0%, rgba(18,18,0,1) 25%, rgba(32,32,32,1) 50%, rgba(18,18,0,1) 75%, rgba(23,23,25,1) 100%);
+
+  --icon-filter: invert(83%) sepia(0%) saturate(1582%) hue-rotate(126deg) brightness(86%) contrast(80%);
+
+  /* base16 tomorrow night */
+  --chroma-base00: #080808;
+  --chroma-base01: #393939;
+  --chroma-base02: rgba(159, 218, 159, .1);
+  --chroma-base03: #999999;
+  --chroma-base04: #b4b7b4;
+  --chroma-base05: #cccccc;
+  --chroma-base06: #e0e0e0;
+  --chroma-base07: #ffffff;
+  --chroma-base08: #f2777a;
+  --chroma-base09: #f99157;
+  --chroma-base0A: #ffcc66;
+  --chroma-base0B: #99cc99;
+  --chroma-base0C: #66cccc;
+  --chroma-base0D: #6699cc;
+  --chroma-base0E: #cc99cc;
+  --chroma-base0F: #a3685a;
+}
+
+.icon:not(.icon-colored) {
+  filter: var(--icon-filter);
+}

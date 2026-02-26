@@ -63,9 +63,18 @@ One-line solution:
 curl -fsSL https://raw.githubusercontent.com/mijorus/smile/refs/heads/master/extras/autopaste-service-install.sh | bash
 ```
 
-To uninstall the service, if needed, run:
+### Uninstall
 
+Uninstall dotool:
+
+```bash
+curl -fsSL https://git.sr.ht/~geb/dotool/blob/1.6/uninstall.sh | bash
 ```
+
+Uninstall the autopaste service:
+
+```bash
 curl -fsSL https://raw.githubusercontent.com/mijorus/smile/refs/heads/master/extras/autopaste-service-uninstall.sh | bash
 ```
+
 

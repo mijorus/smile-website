@@ -35,7 +35,7 @@ Smile relies on [dotool](https://sr.ht/~geb/dotool/), which is way easier to set
 Packages are available for Arch and other system, read more here:
 https://sr.ht/~geb/dotool/
 
-1. Install requirements
+- Install requirements
 
 ```bash
 # Ubuntu
@@ -45,7 +45,7 @@ sudo apt install go libxkbcommon-devel scdoc
 sudo dnf install go libxkbcommon-devel scdoc
 ```
 
-2. Build and install dotool
+- Build and install dotool
 
 One-line solution:
 
@@ -53,7 +53,7 @@ One-line solution:
 curl -fsSL https://raw.githubusercontent.com/mijorus/smile/refs/heads/master/extras/install-dotool.sh | bash
 ```
 
-3. Restart the computer
+- Restart the computer
 
 ### Step 2: Install the `smile-autopaste.service`
 

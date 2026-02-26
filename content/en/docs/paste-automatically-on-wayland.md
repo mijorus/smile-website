@@ -35,13 +35,7 @@ Smile relies on [dotool](https://sr.ht/~geb/dotool/), which is way easier to set
 Packages are available for Arch and other system, read more here:
 https://sr.ht/~geb/dotool/
 
-1. Download `dotool`
-
-```
-git clone https://git.sr.ht/~geb/dotool
-```
-
-2. Install requirements
+1. Install requirements
 
 ```bash
 # Ubuntu
@@ -51,22 +45,32 @@ sudo apt install go libxkbcommon-devel scdoc
 sudo dnf install go libxkbcommon-devel scdoc
 ```
 
-3. Build and install
+2. Build and install
 
 ```bash
+if [ -d "dotool" ]; then
+        echo "Directory 'dotool' already exists. Skipping download."
+else
+        if  command -v git &> /dev/null; then
+            git clone https://git.sr.ht/~geb/dotool
+        else
+            wget https://git.sr.ht/~geb/dotool/archive/1.6.tar.gz -O dotool.tar.gz
+            tar -xzvf dotool.tar.gz
+            mv dotool-1.6 dotool
+            rm dotool.tar.gz
+        fi
+fi
+
 cd dotool
 ./build.sh && sudo ./build.sh install
 sudo udevadm control --reload && sudo udevadm trigger
-```
 
-4. Add yourself to the input group
-
-```bash
+# Add an "input" group and add yourself to it
 groupadd -f input
 sudo usermod -a -G input $USER
 ```
 
-5. Restart the computer
+3. Restart the computer
 
 ### Step 2: Install the `smile-autopaste.service`
 
